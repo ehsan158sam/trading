@@ -1,0 +1,88 @@
+# D:\AdvancedTradingSystem\requirements.txt
+
+# Core ML/DL
+torch>=2.0.0
+stable-baselines3>=2.1.0
+gymnasium>=0.29.0
+numpy>=1.21.0
+pandas>=1.3.0
+scikit-learn>=0.24.2
+tensorflow>=2.8.0
+statsmodels>=0.13.0
+scipy>=1.7.0
+matplotlib>=3.4.0
+seaborn>=0.11.0
+ccxt>=2.0.0
+yfinance>=0.1.70
+python-dotenv>=0.19.0
+requests>=2.26.0
+websockets>=10.0
+aiohttp>=3.8.0
+pytest>=6.2.5
+pytest-asyncio>=0.16.0
+black>=21.9b0
+flake8>=3.9.0
+mypy>=0.910
+coverage>=6.0
+
+# Data Processing
+ta-lib>=0.4.25
+pandas-ta>=0.3.14b0
+
+# Visualization and Monitoring
+wandb>=0.15.0
+tensorboard>=2.13.0
+plotly>=5.14.0
+dash>=2.9.0
+
+# Utilities
+pyyaml>=6.0.0
+asyncio>=3.4.3
+pytz>=2023.3
+python-dateutil>=2.8.2
+
+# Testing and Development
+pytest>=7.3.1
+pytest-asyncio>=0.21.1
+black>=23.3.0
+flake8>=6.0.0
+mypy>=1.3.0
+
+# Documentation
+sphinx>=7.0.1
+sphinx-rtd-theme>=1.2.0
+
+# Optional but recommended
+optuna>=3.2.0  # For hyperparameter optimization
+ray[tune]>=2.5.1  # For distributed training
+mlflow>=2.6.0  # For experiment tracking
+
+# Core utilities
+PyYAML                # For reading YAML configuration files
+pydantic              # For data validation and settings management
+# pydantic-settings   # Optional: For more advanced .env handling with Pydantic V2, if needed later
+
+# Numerical and Data Handling
+pyarrow               # For efficient Parquet file handling with pandas
+
+# MetaTrader 5 Integration
+MetaTrader5           # Official MetaTrader 5 API for Python
+
+# Technical Analysis & AI Environment
+# pandas-ta~=0.3.14b0   # Technical Analysis library (version compatible with NumPy 1.x)
+# torch                 # PyTorch, a dependency for Stable Baselines3
+# stable-baselines3[extra] # Reinforcement learning algorithms (with extra dependencies like gymnasium)
+# gymnasium             # Toolkit for developing and comparing reinforcement learning algorithms (successor to OpenAI Gym)
+
+# Dashboard
+dash-bootstrap-components # Bootstrap themes and components for Dash
+
+# Testing (usually not in production requirements, but good for dev/test environments)
+# pytest                # Framework for writing and running tests
+# pytest-asyncio        # For testing asyncio code with pytest
+# pytest-mock         # (Optional, if not using unittest.mock directly or if pytest-mock plugin provides more convenience)
+                        # Usually, unittest.mock (built-in) is sufficient. pytest-mock plugin is also common.
+                        # For now, assuming unittest.mock is used where needed, or SB3/Dash bring their own test utils.
+
+# Additional dependencies
+psutil>=5.9.0
